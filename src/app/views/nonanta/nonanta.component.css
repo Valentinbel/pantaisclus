@@ -1,0 +1,40 @@
+* {
+  cursor: url(../../../assets/Images/cursor.svg), auto!important;
+}
+/*.paginanonanta {
+}*/
+
+a:-webkit-any-link {
+  cursor: url(../../../assets/Images/cursor_det.svg), auto!important;
+}
+
+.topnavbar {
+  background-color: var(--grisclar);
+  border-color: var(--grisescur);
+}
+
+.navbar {
+  padding: 0rem 1rem;
+}
+
+.nav-link{
+  font-size: 0.9rem;
+  padding: 0.1rem 1rem
+}
+
+.titolmenu{
+  display: block;
+  font-size: 0.9rem;
+  padding: 0.1rem 1rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.navbar-light .navbar-nav .nav-link, .titolmenu {
+  color: rgba(0,0,0,.5);
+}
+
+.navbar-expand .navbar-nav .nav-link, .titolmenu {
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+

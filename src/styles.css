@@ -3,6 +3,8 @@
     --yellow-color: #d2bb1f;
     --noir-background: #131518;
     --white: white;
+    --grisclar: rgb(169, 205, 229);
+    --grisescur: rgb(144, 159, 171);
 }
 
 
@@ -36,7 +38,7 @@ body {
     background-color: var(--noir-background);
     color: var(--white);
 }
-body, .ng-isolate-scope, home, index2, index, headerview{
+body, .ng-isolate-scope {
 overflow: visible;
 }
 
