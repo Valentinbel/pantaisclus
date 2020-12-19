@@ -1,12 +1,21 @@
 * {
+  box-sizing: border-box;
   cursor: url(../../../assets/Images/cursor.svg), auto!important;
 }
-/*.paginanonanta {
-}*/
 
 a:-webkit-any-link {
   cursor: url(../../../assets/Images/cursor_det.svg), auto!important;
 }
+:not(input):not(textarea) {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*.paginanonanta {
+}*/
+
+/*******NavbarMenu*******/
 
 .topnavbar {
   background-color: var(--grisclar);
@@ -38,3 +47,78 @@ a:-webkit-any-link {
   padding-left: .5rem;
 }
 
+/*******Icones*******/
+.section-icons ul li * {
+  cursor: url(../../../assets/Images/cursor_det.svg) 3 0,auto!important;
+}
+.section-icons {
+  pointer-events: none;
+}
+
+.section-icons.is-absolute {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.section-icons * {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.section-icons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.section-icons ul li {
+  pointer-events: all;
+  width: 76px;
+  height: 70px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.section-icons ul, .section-icons ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-icons ul .image-wrapper {
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 7px;
+}
+
+.section-icons ul span {
+  display: block;
+  cursor: pointer;
+  font-family: Arial;
+  padding: 0 2px;
+  background: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #effbfe;
+  width: 64px;
+  background: rgb(216, 215, 231);
+  border-color: rgb(216, 215, 231);
+
+}
