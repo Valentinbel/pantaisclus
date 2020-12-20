@@ -1,8 +1,29 @@
+@font-face {
+  font-family: "Chicago";
+  src: url("../../../Fonts/Chicago.ttf") format("truetype");
+}
 * {
   box-sizing: border-box;
   cursor: url(../../../assets/Images/cursor.svg), auto!important;
+  font-family: "Chicago";
 }
 
+/* .paginanonanta {
+} */
+
+#nonanta>div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: stretch;
+}
 a:-webkit-any-link {
   cursor: url(../../../assets/Images/cursor_det.svg), auto!important;
 }
@@ -12,8 +33,7 @@ a:-webkit-any-link {
   -ms-user-select: none;
   user-select: none;
 }
-/*.paginanonanta {
-}*/
+
 
 /*******NavbarMenu*******/
 
@@ -47,9 +67,20 @@ a:-webkit-any-link {
   padding-left: .5rem;
 }
 
+.draggable-bounds {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: auto;
+  overflow: hidden;
+}
+.imagefond{
+  background-image: url("../../../assets/Images/themepantalla/imatgefons.jpeg");
+}
+
 /*******Icones*******/
 .section-icons ul li * {
-  cursor: url(../../../assets/Images/cursor_det.svg) 3 0,auto!important;
+  cursor: url("../../../assets/Images/cursor_det.svg") 3 0,auto!important;
 }
 .section-icons {
   pointer-events: none;
@@ -106,10 +137,16 @@ a:-webkit-any-link {
   margin-bottom: 7px;
 }
 
+.section-icons ul .image-wrapper img {
+  max-height: 35px;
+  display: block;
+  margin: auto;
+}
 .section-icons ul span {
   display: block;
   cursor: pointer;
   font-family: Arial;
+  font-size: 0.9rem; /**/
   padding: 0 2px;
   background: #fff;
   -webkit-user-select: none;

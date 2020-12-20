@@ -9,20 +9,20 @@
 
 
 @font-face {
-    font-family: 'TT Norms Light';
-    src: url('./Fonts/TTNormsLight.ttf') format('truetype'), url('./Fonts/TTNormsLight.otf') format('truetype');
+    font-family: "TT Norms Light";
+    src: url("./Fonts/TTNormsLight.ttf") format("truetype"), url("./Fonts/TTNormsLight.otf") format("truetype");
 }
 /*@font-face {
-    font-family: 'TT Norms Pro DemiBold';
-    src: url('./Fonts/TTNormsProDemiBold.ttf') format('truetype'), url('./Fonts/TTNormsProDemiBold.otf') format('truetype');
+    font-family: "TT Norms Pro DemiBold";
+    src: url("./Fonts/TTNormsProDemiBold.ttf") format("truetype"), url("./Fonts/TTNormsProDemiBold.otf") format("truetype");
 }*/
 @font-face {
-    font-family: 'bold';
-    src: url('./Fonts/bold.ttf') format('truetype'), url('./Fonts/bold.otf') format('truetype');
+    font-family: "bold";
+    src: url("./Fonts/bold.ttf") format("truetype"), url("./Fonts/bold.otf") format("truetype");
 }
 @font-face {
-    font-family: 'TT Norms Pro DemiBold Italic';
-    src: url('./Fonts/TTNormsProDemiBoldItalic.ttf') format('truetype'), url('./Fonts/TTNormsProDemiBoldItalic.otf') format('truetype');
+    font-family: "TT Norms Pro DemiBold Italic";
+    src: url("./Fonts/TTNormsProDemiBoldItalic.ttf") format("truetype"), url("./Fonts/TTNormsProDemiBoldItalic.otf") format("truetype");
 }/*/Fonts/TTNormsProDemiBoldItalic.ttf*/
 
 @media (min-width:576px) {
@@ -33,7 +33,7 @@
 }
 
 body {
-    font-family: 'TT Norms Light';
+    font-family: "TT Norms Light";
     margin: 0px;
     background-color: var(--noir-background);
     color: var(--white);
