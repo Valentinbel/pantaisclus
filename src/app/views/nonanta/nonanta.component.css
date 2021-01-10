@@ -80,7 +80,13 @@ a:-webkit-any-link {
 }
 
 /*******FENESTRAS*******/
-
+.component-outer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
 /*******Icònas*******/
 .section-icons ul li * {
   cursor: url("../../../assets/Images/cursor_det.svg") 3 0,auto!important;
