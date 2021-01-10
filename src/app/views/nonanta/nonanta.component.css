@@ -34,6 +34,10 @@ a:-webkit-any-link {
   user-select: none;
 }
 
+/*******THEME*******/
+.imagefond{
+  z-index: -1000;
+}
 
 /*******NavbarMenu*******/
 
@@ -74,11 +78,10 @@ a:-webkit-any-link {
   height: auto;
   overflow: hidden;
 }
-.imagefond{
-  background-image: url("../../../assets/Images/themepantalla/imatgefons.jpeg");
-}
 
-/*******Icones*******/
+/*******FENESTRAS*******/
+
+/*******Icònas*******/
 .section-icons ul li * {
   cursor: url("../../../assets/Images/cursor_det.svg") 3 0,auto!important;
 }
