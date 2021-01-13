@@ -4,8 +4,17 @@
 }
 * {
   box-sizing: border-box;
-  cursor: url(../../../assets/Images/cursor.svg), auto!important;
+  cursor: url(../../../assets/Images/cursor/cursor.svg), auto!important;
   font-family: "Chicago";
+}
+a:-webkit-any-link {
+  cursor: url(../../../assets/Images/cursor/cursor_det.svg), auto!important;
+}
+
+.global-item:not(.no-drag) .drag-header, .global-item:not(.no-drag)
+  .drag-header .spacer, .global-item:not(.no-drag) .drag-header
+  .spacer i, .global-item:not(.no-drag) .drag-header h2{
+  cursor: url(../../../assets/Images/cursor/cursor_man.svg),auto!important
 }
 
 /* .paginanonanta {
@@ -24,9 +33,7 @@
   min-height: -moz-available;
   min-height: stretch;
 }
-a:-webkit-any-link {
-  cursor: url(../../../assets/Images/cursor_det.svg), auto!important;
-}
+
 :not(input):not(textarea) {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -34,49 +41,21 @@ a:-webkit-any-link {
   user-select: none;
 }
 
-/*******THEME*******/
-.imagefond{
-  z-index: -1000;
-}
-
-/*******NavbarMenu*******/
-
-.topnavbar {
-  background-color: var(--grisclar);
-  border-color: var(--grisescur);
-}
-
-.navbar {
-  padding: 0rem 1rem;
-}
-
-.nav-link{
-  font-size: 0.9rem;
-  padding: 0.1rem 1rem
-}
-
-.titolmenu{
+section{
+  position: relative;
   display: block;
-  font-size: 0.9rem;
-  padding: 0.1rem 1rem;
-  -webkit-font-smoothing: antialiased;
 }
-
-.navbar-light .navbar-nav .nav-link, .titolmenu {
-  color: rgba(0,0,0,.5);
-}
-
-.navbar-expand .navbar-nav .nav-link, .titolmenu {
-  padding-right: .5rem;
-  padding-left: .5rem;
-}
-
 .draggable-bounds {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
   height: auto;
   overflow: hidden;
+}
+
+/*******THEME*******/
+.imagefond{
+  z-index: -1000;
 }
 
 /*******FENESTRAS*******/
@@ -87,9 +66,95 @@ a:-webkit-any-link {
   pointer-events: none;
   z-index: 1;
 }
+
+.global-item{
+  border: 1px solid #000;
+  -webkit-box-shadow: inset 1px 1px 0 0 #fff, 5px 5px 0 rgba(0,0,0,.2);
+  box-shadow: inset 1px 1px 0 0 #fff, 5px 5px 0 rgba(0,0,0,.2);
+  background: #effbfe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 1!important;
+  pointer-events: all;
+  -webkit-transition: background .01s ease-in-out;
+  transition: background .01s ease-in-out;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+.global-item * {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+.global-item .drag-header{
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5px;
+    height: 21px;
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.global-item .drag-header .icon{
+  border: 1px solid #000;
+  position: relative;
+  width: 11px;
+  height: 11px;
+  cursor: url(../../../assets/Images/cursor/cursor_det.svg) 3 0,auto!important;
+}
+
+.global-item .drag-header .icon:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: " ";
+  width: 9px;
+  height: 9px;
+  background: url(../../../assets/Images/tancaDiv.png) no-repeat 50%;
+  background-size: 7px auto;
+}
+
+.global-item .drag-header .icon:active {
+  background: #000;
+}
+h2{
+  font-size: 16px;
+  margin: 0;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.global-item .drag-header h2{
+  font-weight: 400;
+}
+
+.fenestraCredits{
+  transform: translate(20px, 20px);
+    z-index: auto;
+    user-select: auto;
+    background: rgb(181, 229, 229);
+    width: 300px;
+    height: 200px;
+}
 /*******Icònas*******/
 .section-icons ul li * {
-  cursor: url("../../../assets/Images/cursor_det.svg") 3 0,auto!important;
+  cursor: url("../../../assets/Images/cursor/cursor_det.svg") 3 0,auto!important;
 }
 .section-icons {
   pointer-events: none;
@@ -166,5 +231,36 @@ a:-webkit-any-link {
   width: 64px;
   background: rgb(216, 215, 231);
   border-color: rgb(216, 215, 231);
+}
 
+/*******NavbarMenu*******/
+
+.topnavbar {
+  background-color: var(--grisclar);
+  border-color: var(--grisescur);
+}
+
+.navbar {
+  padding: 0rem 1rem;
+}
+
+.nav-link{
+  font-size: 0.9rem;
+  padding: 0.1rem 1rem
+}
+
+.titolmenu{
+  display: block;
+  font-size: 0.9rem;
+  padding: 0.1rem 1rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.navbar-light .navbar-nav .nav-link, .titolmenu {
+  color: rgba(0,0,0,.5);
+}
+
+.navbar-expand .navbar-nav .nav-link, .titolmenu {
+  padding-right: .5rem;
+  padding-left: .5rem;
 }

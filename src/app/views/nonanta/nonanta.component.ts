@@ -13,3 +13,7 @@ export class NonantaComponent implements OnInit {
   }
 
 }
+/* javascript fenestras :
+     - active
+     - z-index +1-->
+*/
