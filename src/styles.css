@@ -36,7 +36,7 @@ body {
     font-family: "TT Norms Light";
     margin: 0px;
     background-color: var(--noir-background);
-    color: var(--white);
+    /*color: var(--white);*/
 }
 body, .ng-isolate-scope {
 overflow: visible;

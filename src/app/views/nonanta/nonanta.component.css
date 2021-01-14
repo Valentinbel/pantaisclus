@@ -112,6 +112,7 @@ section{
   position: relative;
   width: 11px;
   height: 11px;
+  margin-right: 5px;
   cursor: url(../../../assets/Images/cursor/cursor_det.svg) 3 0,auto!important;
 }
 
@@ -130,10 +131,9 @@ section{
   background: #000;
 }
 h2{
-  font-size: 16px;
+  font-size: 15px;
   margin: 0;
   display: block;
-  font-size: 1.5em;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 0px;
@@ -142,6 +142,45 @@ h2{
 }
 .global-item .drag-header h2{
   font-weight: 400;
+}
+
+.global-item .inner-wrapper {
+  padding: 0 5px 15px 5px;
+  position: relative;
+  pointer-events: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+}
+
+.inner-wrapper-credits{
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 0!important;
+  margin: 0 5px 15px 5px;
+  background: #fff;
+}
+
+.global-item .inner-wrapper>div{
+  pointer-events: all;
+}
+
+.texteditorform{
+  pointer-events: all;
+  resize: none;
+  height: calc(100% + 4px)!important;
+  margin-top: -2px;
+  cursor: url(../../../assets/Images/cursor/cursor_text.svg),auto!important;
+}
+
+.global-item .inner-content{
+  font-family: Arial;
+  border: 1px solid #000;
+  padding: 5px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
 }
 
 .fenestraCredits{
