@@ -1,166 +1,166 @@
 ﻿:root {
-    --gold-color: #85754e;
-    --yellow-color: #d2bb1f;
-    --noir-background: #131518;
-    --white: white;
-    --grisclar: rgb(169, 205, 229);
-    --grisescur: rgb(144, 159, 171);
+  --gold-color: #85754e;
+  --yellow-color: #d2bb1f;
+  --noir-background: #131518;
+  --white: white;
+  --grisclar: rgb(169, 205, 229);
+  --grisescur: rgb(144, 159, 171);
 }
 
 
 @font-face {
-    font-family: "TT Norms Light";
-    src: url("./Fonts/TTNormsLight.ttf") format("truetype"), url("./Fonts/TTNormsLight.otf") format("truetype");
+  font-family: "TT Norms Light";
+  src: url("./Fonts/TTNormsLight.ttf") format("truetype"), url("./Fonts/TTNormsLight.otf") format("truetype");
 }
 /*@font-face {
-    font-family: "TT Norms Pro DemiBold";
-    src: url("./Fonts/TTNormsProDemiBold.ttf") format("truetype"), url("./Fonts/TTNormsProDemiBold.otf") format("truetype");
+  font-family: "TT Norms Pro DemiBold";
+  src: url("./Fonts/TTNormsProDemiBold.ttf") format("truetype"), url("./Fonts/TTNormsProDemiBold.otf") format("truetype");
 }*/
 @font-face {
-    font-family: "bold";
-    src: url("./Fonts/bold.ttf") format("truetype"), url("./Fonts/bold.otf") format("truetype");
+  font-family: "bold";
+  src: url("./Fonts/bold.ttf") format("truetype"), url("./Fonts/bold.otf") format("truetype");
 }
 @font-face {
-    font-family: "TT Norms Pro DemiBold Italic";
-    src: url("./Fonts/TTNormsProDemiBoldItalic.ttf") format("truetype"), url("./Fonts/TTNormsProDemiBoldItalic.otf") format("truetype");
+  font-family: "TT Norms Pro DemiBold Italic";
+  src: url("./Fonts/TTNormsProDemiBoldItalic.ttf") format("truetype"), url("./Fonts/TTNormsProDemiBoldItalic.otf") format("truetype");
 }/*/Fonts/TTNormsProDemiBoldItalic.ttf*/
 
 @media (min-width:576px) {
-    .row{
-        padding-right: 15px;
-        padding-left: 15px;
-    }
+  .row{
+      padding-right: 15px;
+      padding-left: 15px;
+  }
 }
 
 body {
-    font-family: "TT Norms Light";
-    margin: 0px;
-    background-color: var(--noir-background);
-    /*color: var(--white);*/
+  font-family: "TT Norms Light";
+  margin: 0px;
+  background-color: var(--noir-background);
+  /*color: var(--white);*/
 }
 body, .ng-isolate-scope {
 overflow: visible;
 }
 
 .container-fluid {
-  padding-right: 0px;
-  padding-left: 0px;
+padding-right: 0px;
+padding-left: 0px;
 }
 
 .hide {
-  display: none;
+display: none;
 }
 
 
 /*------mute/unmute------
 .muted{
-	background: url("../Images/mute_icon.png") no-repeat;
-    height: 25px;
-	width: 25px;
-	background-size: 25px 25px;
-	z-index: 3;
+background: url("../Images/mute_icon.png") no-repeat;
+  height: 25px;
+width: 25px;
+background-size: 25px 25px;
+z-index: 3;
 }
 .unmuted{
-    background-image: url("./Images/unmute_icon.png");
-    z-index: 3;
+  background-image: url("./Images/unmute_icon.png");
+  z-index: 3;
 }*/
 /*------ESCAPA-------*/
 .escapa{
-	background: url("./assets/Images/skip.png") no-repeat;
-    height: 30px;
-	width: 85px;
-	background-size: 85px 30px;
-	cursor: pointer;
-	position: absolute;
-	top: 7px;
-    right: 7px;
-    z-index: 999999;
+background: url("./assets/Images/skip.png") no-repeat;
+  height: 30px;
+width: 85px;
+background-size: 85px 30px;
+cursor: pointer;
+position: absolute;
+top: 7px;
+  right: 7px;
+  z-index: 999999;
 }
 .escapa:hover{
-    background-image: url("./assets/Images/skip_hover.png");
-    }
+  background-image: url("./assets/Images/skip_hover.png");
+  }
 
 /*------SOCIAU-------*/
 .facebook{
-	background: url("./assets/Images/sociau/fb_link.png") no-repeat;
-    height: 45px;
-	width: 26px;
-	background-size: 26px 45px;}
+background: url("./assets/Images/sociau/fb_link.png") no-repeat;
+  height: 45px;
+width: 26px;
+background-size: 26px 45px;}
 .facebook:hover{
-    background-image: url("./assets/Images/sociau/fb_hover.png");
-    }
+  background-image: url("./assets/Images/sociau/fb_hover.png");
+  }
 
 .instagram{
-	background: url("./assets/Images/sociau/insta_link.png") no-repeat;
-    height: 45px;
-	width: 49px;
-	background-size: 49px 45px;}
+background: url("./assets/Images/sociau/insta_link.png") no-repeat;
+  height: 45px;
+width: 49px;
+background-size: 49px 45px;}
 .instagram:hover{
-    background-image: url("./assets/Images/sociau/insta_hover.png");}
+  background-image: url("./assets/Images/sociau/insta_hover.png");}
 
 .twitter{
-	background: url("./assets/Images/sociau/twitter_link.png") no-repeat;
-    height: 45px;
-	width: 54px;
-	background-size: 54px 45px;}
+background: url("./assets/Images/sociau/twitter_link.png") no-repeat;
+  height: 45px;
+width: 54px;
+background-size: 54px 45px;}
 .twitter:hover{
-    background-image: url("./assets/Images/sociau/twitter_hover.png");}
+  background-image: url("./assets/Images/sociau/twitter_hover.png");}
 
 .apple{
-	background: url("./assets/Images/sociau/apple_link.png") no-repeat;
-    height: 45px;
-	width: 40px;
-	background-size: 40px 45px;}
+background: url("./assets/Images/sociau/apple_link.png") no-repeat;
+  height: 45px;
+width: 40px;
+background-size: 40px 45px;}
 .apple:hover{
-    background-image: url("./assets/Images/sociau/apple_hover.png");}
+  background-image: url("./assets/Images/sociau/apple_hover.png");}
 
 .spotify{
-	background: url("./assets/Images/sociau/spot_link.png") no-repeat;
-    height: 45px;
-	width: 49px;
-	background-size: 49px 45px;}
+background: url("./assets/Images/sociau/spot_link.png") no-repeat;
+  height: 45px;
+width: 49px;
+background-size: 49px 45px;}
 .spotify:hover{
-    background-image: url("./assets/Images/sociau/spot_hover.png");}
+  background-image: url("./assets/Images/sociau/spot_hover.png");}
 
 .bandcamp{
-	background: url("./assets/Images/sociau/bc_link.png") no-repeat;
-    height: 45px;
-	width: 65px;
-	background-size: 65px 45px;}
+background: url("./assets/Images/sociau/bc_link.png") no-repeat;
+  height: 45px;
+width: 65px;
+background-size: 65px 45px;}
 .bandcamp:hover{
-    background-image: url("./assets/Images/sociau/bc_hover.png");}
+  background-image: url("./assets/Images/sociau/bc_hover.png");}
 
 .soundcloud{
-	background: url("./assets/Images/sociau/sound_link.png") no-repeat;
-    height: 45px;
-	width: 64px;
-	background-size: 64px 45px;}
+background: url("./assets/Images/sociau/sound_link.png") no-repeat;
+  height: 45px;
+width: 64px;
+background-size: 64px 45px;}
 .soundcloud:hover{
-    background-image: url("./assets/Images/sociau/sound_hover.png");}
+  background-image: url("./assets/Images/sociau/sound_hover.png");}
 
 .youtube {
-	background: url("./assets/Images/sociau/ytb_link.png") no-repeat;
-    height: 45px;
-    width: 42px;
-    background-size: 42px 45px;}
+background: url("./assets/Images/sociau/ytb_link.png") no-repeat;
+  height: 45px;
+  width: 42px;
+  background-size: 42px 45px;}
 .youtube:hover{
-    background-image: url("./assets/Images/sociau/ytb_hover.png");}
+  background-image: url("./assets/Images/sociau/ytb_hover.png");}
 
 /* vue mobile */
 @media (max-width:576px) {
-	body{
-		font-size: 15px;
-	}
-	.footeradress, .footer {
-		font-size: 80%;
-	}
-	.footer .navbar-nav{
-		justify-content: center;
-		line-height:1;
-	}
-	.separation{
-		display:none;
-	}
+body{
+  font-size: 15px;
+}
+.footeradress, .footer {
+  font-size: 80%;
+}
+.footer .navbar-nav{
+  justify-content: center;
+  line-height:1;
+}
+.separation{
+  display:none;
+}
 
 }
 

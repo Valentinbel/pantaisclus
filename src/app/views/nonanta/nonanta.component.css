@@ -17,8 +17,9 @@ a:-webkit-any-link {
   cursor: url(../../../assets/Images/cursor/cursor_man.svg),auto!important
 }
 
-/* .paginanonanta {
-} */
+.paginanonanta {
+  position: relative;
+}
 
 #nonanta>div {
   display: -webkit-box;
@@ -52,10 +53,17 @@ section{
   height: auto;
   overflow: hidden;
 }
+.draggable-bounds>div{
+  margin-top: -1px;
+  height: calc(100% + 1px);
+  width: 100%;
+}
 
 /*******THEME*******/
 .imagefond{
   z-index: -1000;
+  background-image: url("../../../assets/Images/themepantalla/imatgefons.jpeg");
+  background-repeat: no-repeat, repeat
 }
 
 /*******FENESTRAS*******/
